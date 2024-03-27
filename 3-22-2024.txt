@@ -1,0 +1,785 @@
+Home.py
+
+import streamlit as st
+import numpy as np
+import pandas as pd
+import os
+def app():   
+    st.image('images/Header_Title.png')
+    with st.container():
+        st.subheader("Think innovative!")
+        st.title("We will make it possible for you")
+        st.subheader("An Embedded Systems Engineering and Solutions Company")
+        st.write("[Know more..>](https://atyatechnologies.com)")
+    with st.container():
+        st.write("---")
+        st.header("What we do")
+        st.subheader("Accelerating Human Break throughs Together")
+        st.write(
+                """
+                With our customers, we cocreate solutions across:
+                - Pharma, 
+                - Automotive, 
+                - Agriculture,                
+                - Healthcare
+                """
+            )
+    with st.container():
+        st.write("---")
+    st.header("Our Projects")
+    st.write("##")
+    image_column,text_column=st.columns((1,2))
+    with image_column:
+        st.image("images/pharmasensor.png")
+        #insert image
+        with text_column:
+            st.subheader(" We undergo some embedded missions responsible for this........")
+            st.write(
+                """
+                Pharmaceutical sensors are used for a wide range of applications, 
+                Including measuring oxygen, CO2, pH, conductivity, and turbidity.
+                The method of detection for a given measure will vary depending on the probe or sensor.                
+                """
+            )
+        st.write("---------------------------------------------------------------------------------------------------------------------------------------")
+    image_column,text_column=st.columns((1,2))
+    with image_column:
+        st.image("images/ARM.png")
+        #insert image
+        with text_column:
+            st.subheader(" ARM system on module & single board Computers")
+            st.write(
+                """
+                Explore an extensive portfolio of System on Modules powered by various MPUs from NXP, 
+                TI, Renesas and ST, and available in OSM, SMARC, Qseven and SODIMM standards.                
+                """
+            )
+        st.write("---------------------------------------------------------------------------------------------------------------------------------------")
+    image_column,text_column=st.columns((1,2))
+    with image_column:
+        st.image("images/FPGA.png")
+        #insert image
+        with text_column:
+            st.subheader(" FPGA System on Modules, PCIe & FMC Cards")
+            st.write(
+                """
+               - Discover FPGA and Soc FPGA powered System on Modules, 
+               - Single Board Computers, PCIe and FMC Cards which are built to empower your product development and innovation.               
+                """
+            )
+        st.write("---------------------------------------------------------------------------------------------------------------------------------------")
+    image_column,text_column=st.columns((1,2))
+    with image_column:
+        st.image("images/Gateway.png")
+        #insert image
+        with text_column:
+            st.subheader("Gateway Solutions")
+            st.write(
+                """
+              A wide range of modularly designed Industrial IoT Gateways, Edge AI Gateways, and LoRaWAN Gateways to accommodate different application needs.               
+                """)
+    st.markdown("""
+    
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <title>Responsive Footer</title>
+                        <!-- Font Awesome CDN -->
+                        <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+                        />
+                        <!-- Google Fonts -->
+                        <link
+                        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+                        rel="stylesheet"
+                        />
+                        <!-- Stylesheet -->
+                        <style>
+                        /* Add your CSS styles here */
+                        body {
+                            font-family: 'Poppins', sans-serif;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        footer {
+                            background-color: #f9f9f9;
+                            padding: 20px;
+                            text-align: center;
+                        }
+                        .row {
+                            display: flex;
+                            justify-content: space-around;
+                            margin-bottom: 20px;
+                        }
+                        .column {
+                            flex: 1;
+                            padding: 0 20px;
+                        }
+                        .column h3 {
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+                        .column p {
+                            font-size: 14px;
+                            line-height: 1.6;
+                        }
+                        input[type="email"] {
+                            width: 100%;
+                            padding: 8px;
+                            margin-bottom: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                        }
+                        button {
+                            background-color: #4CAF50;
+                            color: white;
+                            padding: 8px 20px;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        }
+                        button:hover {
+                            background-color: #45a049;
+                        }
+                        .social {
+                            margin-top: 10px;
+                        }
+                        .social i {
+                            margin-right: 10px;
+                            font-size: 24px;
+                        }
+                        .secondary p {
+                            margin: 5px 0;
+                        }
+                        .copyright p {
+                            font-size: 12px;
+                            color: #777;
+                        }
+                        </style>
+                    </head>
+                    <body>
+                        <footer>
+                        <div class="row primary">
+                            <div class="column about">
+                            <h3>Company Name</h3>
+                            <p>
+                                EmbedView Solutions streamlines complex projects by offering both hardware and software development. They design sensors to collect data, build programs to analyze it, and store everything securely in the cloud. This one-stop shop creates custom solutions that seamlessly link data collection, analysis, and visualization.
+                            </p>
+                            </div>
+                            <div class="column links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                <a href="#faq">F.A.Q</a>
+                                </li>
+                                <li>
+                                <a href="#cookies-policy">Cookies Policy</a>
+                                </li>
+                                <li>
+                                <a href="#terms-of-services">Terms Of Service</a>
+                                </li>
+                                <li>
+                                <a href="#support">Support</a>
+                                </li>
+                                <li>
+                                <a href="#careers">Careers</a>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="column subscribe">
+                            <h3>Subscribe</h3>
+                            <div>
+                                <input type="email" placeholder="Your email id here" />
+                                <button>Subscribe</button>
+                            </div>
+                            <div class="social">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram-square"></i>
+                                <i class="fab fa-twitter-square"></i>
+                            </div>
+                            </div>
+                        </div>
+
+                    
+                    """, unsafe_allow_html=True)
+
+______________________________________________________________________________________________
+
+
+about.py
+
+import streamlit as st
+
+from streamlit_option_menu import option_menu
+
+def app():
+
+    st.markdown("<h1 style='text-align: center; color: Black;'>Hello, we are Embed-View</h1>", unsafe_allow_html=True)
+    st.write("""
+            Embed-View Solutions is a dynamic technology firm specializing in the comprehensive development and
+            delivery of innovative hardware and software solutions. With a core focus on end-to-end service provision, 
+            we excel in crafting tailored solutions that seamlessly integrate hardware sensor data collection, sophisticated software development, and 
+            cloud-based data storage and visualization.
+""")
+    st.markdown("<h1 style='text-align: right; color: Black;'>Our Mission</h1>", unsafe_allow_html=True)
+    write=(
+                """
+              At Embed-View Solutions, we are committed to driving innovation and delivering value to our clients through our holistic approach to hardware and software development. By combining expertise, creativity, and cutting-edge technology, we empower businesses to unlock new opportunities, enhance operational efficiency, and achieve sustainable growth in an increasingly connected world.            
+                """
+            )   
+    s = f"<p style='font-size:20px;'>{write}</p>"
+    st.markdown(s, unsafe_allow_html=True)  
+
+    st.markdown("<h1 style='text-align: left; color: orange;'>Our Purposes</h1>", unsafe_allow_html=True)
+
+    write=(
+                """
+               Embed-view is the home for automotive embedded software products and services specializing in AUTOSAR, 
+               E-E architecture, SDV, Advanced Driver Assistance System (ADAS), Electric Vehicle and Cloud Technologies.
+               AVIN provides end-to-end solutions for next generation vehicles. 
+               With years of experience and expertise in automotive field, embedded domains and AUTOSAR standard, AVIN provides robust (AUTOSAR-based) AGNOSAR® platform products.
+               Moreover, AVIN offers services in the fields of functional safety, cybersecurity, middleware for HPC platforms, over-the-air update (OTA)
+               AI-based autonomous driving solutions.             
+                """
+            )   
+    s = f"<p style='font-size:20px;'>{write}</p>"
+    st.markdown(s, unsafe_allow_html=True)  
+    st.markdown("<h1 style='text-align: right; color: Brown;'>Our Story</h1>", unsafe_allow_html=True)
+    write=(
+                """
+We were one of the pioneers and unique players in IoT and embedded machine learning in Indonesia 
+with global coverage, and have continued to be the leader for the last 6 years.
+As pioneer, we had to face a stiff learning curve, yet still managed to develop and release some real-world IoT products across various industry verticals.
+We also help other organizations, from startups to enterprises, to adopt IoT and AI into their products and business processes, 
+by providing custom hardware design, tailor-made platforms, and applications.            
+                """
+            )   
+    s = f"<p style='font-size:20px;'>{write}</p>"
+    st.markdown(s, unsafe_allow_html=True)  
+    st.write("___")
+    st.markdown("<h1 style='text-align: left; color:Purple;'>Our Projects</h1>", unsafe_allow_html=True)
+
+    images = ["images/p1.png", "images/p2.png", "images/p3.png","images/p4.png","images/p5.png","images/p6.png"]
+    cols = st.columns(6)
+    for i, image in enumerate(images):
+        cols[i].image(image)
+    st.write("___")
+
+    st.markdown("<h1 style='text-align: center; color: Green;'>Additional Services</h1>", unsafe_allow_html=True)
+
+    images = ["images/dashboard1.png", "images/dashboard2.png", "images/dashboard3.png","images/dashboard4.png"]
+    cols = st.columns(4)
+    for i, image in enumerate(images):
+        cols[i].image(image)
+
+    st.image("images/service.png")
+    st.image("images/service1.png")
+    st.subheader("In addition to our core services, we offer custom dashboard creation, empowering you to gain valuable insights from your data and make informed decisions")
+    st.write(" Our platform streamlines creating data products like Dashboard as a Service solutions. It connects to all your data sources in real-time, enriches data with public datasets, and offers a no-code studio for fast visualization creation. Secure sharing with permission management ensures easy access for stakeholders. By empowering data-producing departments, you can leverage their expertise for better data product development.")
+    st.write("___")
+    st.title("Embed-View")
+    st.subheader("Address")
+    st.text("""16-11-767 & 768,
+Flat No:- 502, 5th Floor,Mathru Chaya Complex
+Moosarambagh, Hyderabad
+-500003""")
+    st.subheader("Contact Number")
+    st.write("+91 1425367897")
+    st.subheader("Email")
+    st.write("office@embedview")
+    select=option_menu( 
+                menu_title='Follow us on Social Media',
+                options=['Facebook','Instagram','Twitter','Linkedln','Youtube'],
+                icons=["facebook","instagram", "twitter","linkedin","youtube"]
+                )
+    st.write("___")
+
+    st.write("© 2024 Embed-View") 
+
+    
+    _______________________________________________________________________________________________
+
+
+Contact us.py
+
+import streamlit as st
+
+def app():
+    st.markdown("<h1 style='text-align: center; color: White;'>Contact Us</h1>", unsafe_allow_html=True)
+    st.write("Thank you for your interest in Embed-View. Please fill out and submit the following form and we will contact you shortly.")
+    st.subheader("Contact Information")
+    Full_name=st.text_input("Full name")
+    Email=st.text_input("Email")
+    Address=st.text_input("Address")
+    Phone_number=st.text_input("Phone number")
+    Description=st.text_area("Description")
+    submit_button = st.button("Submit")
+
+    if Description:
+        st.error("Please enter atleast 2 lines. It's a required field!")
+        st.session_state["submitted"] = True  # Prevent form reset
+    else:
+        st.session_state["submitted"] = False
+
+    _______________________________________________________________________________________
+
+Account.py
+
+import streamlit as st
+
+def app():
+    st.title("Login/Signup Form")
+
+    # Display radio buttons for login/signup choice
+    choice = st.radio("Choose an action:", ("Login", "Signup"))
+
+    if choice == "Login":
+        login_form()
+    elif choice == "Signup":
+        signup_form()
+
+import streamlit as st
+
+def login_form():
+    st.header("Login")
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+
+    if st.button("Login"):
+        if username == "" or password == "":
+            st.error("All fields are mandatory.")
+        else:
+            # Placeholder login logic
+            st.success("Logged in as {}".format(username))
+    
+    # Forgot Password hyperlink
+    if st.markdown("[Forgot Password?](https://www.example.com/forgot_password)"):
+        st.session_state.page = "forgot_password"
+    if st.markdown("[Signup For Embed-View](https://www.example.com/forgot_password)"):
+        st.session_state.page = "Signup For Embed-View"
+
+def signup_form():
+    st.header("Signup")
+    username = st.text_input("Username")
+    email = st.text_input("Email")
+    password = st.text_input("Password", type="password")
+    confirm_password = st.text_input("Confirm Password", type="password")
+
+    if st.button("Signup"):
+        if username == "" or email == "" or password == "" or confirm_password == "":
+            st.error("All fields are mandatory.")
+        elif "@" not in email or "." not in email:
+            st.error("Please enter a valid email address.")
+        elif username == "" or "@" not in username or "." not in username:
+            st.error("Please enter a valid username.")
+        elif not validate_password(password):
+            st.error("Password requirements not met.")
+        elif password != confirm_password:
+            st.error("Passwords do not match.")
+        else:
+            # Placeholder signup logic
+            st.success("Signup successful for user: {}".format(username))
+            
+
+def validate_password(password):
+    if len(password) < 12:
+        return False
+    if " " in password:
+        return False
+    if not any(char.isdigit() for char in password):
+        return False
+    if not any(char.isupper() for char in password):
+        return False
+    if not any(char.islower() for char in password):
+        return False
+    return True
+    
+def get_streamlit_code():
+    return app()
+___________________________________________________________________________________________________
+
+Application.py
+
+import streamlit as st
+from streamlit_option_menu import option_menu
+import time
+import datetime
+
+pharma={'Device1':['Temperature','Gas','Humidity','Pressure','Wind'],'Device2':['LABEL SENSOR','OPACITY SENSOR','PARTICULATE MONITORING SENSOR','TIN-SIDE SENSOR'],'Device3':['BRIGHTNESS SENSOR','COLOR SENSOR','CONTRAST SENSOR','UV LUMINESCENCE SENSOR']}
+agri=['Device4','Device5','device6','Device7']
+chemical=['Device8','Device9','device10','Device11','Device12']
+automotive=['Device13','Device14','device15','Device16','Device17']
+electronics=['Device18','Device19','device20','Device21','Device22']
+health_care=['Device23','Device24','device25','Device26','Device27']
+'''['Temperature','Gas','Humidity','Pressure','Wind']'''
+details={'Temperature':'28℃','Gas':'2 CM','Humidity':'79%','Pressure':'2 Pa','Wind':'2 Km/h'}
+global columns
+def app():
+    
+    select=option_menu(
+                menu_title='Applications',
+                options=['Pharma','Agricultural','Chemical','Automotive','Electronics','Health care'],
+                icons=['house-gear','house-gear','house-gear','house-gear','house-gear','house-gear'],
+                orientation='horizontal',
+                )
+    if select=='Pharma':
+        industry(pharma,'Pharma')
+    if select== "Agricultural":
+        industry(agri,"Agricultural")
+    if select== 'Chemical':
+        industry(chemical,'Chemical')
+    if select=='Automotive':
+        industry(automotive,'Automotive')
+    if select=='Electronics':
+        industry(electronics,'Electronics')
+    if select=='Health care':
+        industry(health_care,'Health care')
+    
+
+def industry(devices,industry):
+    st.subheader(f"welcome to {industry}")
+    def Device1(s):
+        multi_select=st.multiselect('sensors',devices[s],default=devices[s])
+        return multi_select
+    def Device2(s):
+        multi_select=st.multiselect('Sensors',devices[s],default=devices[s])
+        return multi_select
+    def Device3(s):
+        multi_select=st.multiselect('Sensors',devices[s],default=devices[s])
+        return multi_select
+    col1, col2, col3 = st.columns(3) 
+
+    with col2:
+        from_date = st.date_input('From Date',value=None,max_value=datetime.date.today())
+        st.rerun
+    with col3:
+        to_date = st.date_input('To Date',value=None,min_value=from_date,max_value=datetime.date.today())
+        st.rerun
+    with col1:
+        selected_page = st.selectbox("Devices", devices)
+        if selected_page == "Device1":
+            columns=Device1(selected_page)
+        if selected_page == "Device2":
+            columns=Device2(selected_page)
+        if selected_page == "Device3":
+            columns=Device3(selected_page)
+    if from_date and to_date:
+        st.write(from_date,to_date)
+    elif columns:
+        rows = st.columns(len(columns))
+        for col in range (len(rows)):
+            tile = rows[col].container(height=200,border=True)
+            tile.metric(f'{columns[col]}',f'{details[columns[col]]}')
+            '''tile.subheader(columns[col])
+            tile.header(details[columns[col]])'''
+
+_____________________________________________________________________________
+
+Service.py
+
+import streamlit as st
+from streamlit_option_menu import option_menu
+
+def app():
+    st.markdown("<h1 style='text-align: center; color: Black;'>Real world products & solutions</h1>", unsafe_allow_html=True)
+    st.write("Embed-View Solutions Pioneering innovation, merging hardware & software expertise to empower clients. We unlock opportunities, enhance efficiency, and foster sustainable growth in an interconnected world through creativity and technology")
+    st.write("<h1 style='text-align:center; font-size:36px;'>Our features & Services</h1>", unsafe_allow_html=True)
+    # CSS styling
+    st.markdown(
+        """
+        <style>
+        <font size="50">  
+</font>  
+        $primary: hsl(222,80%,50%);
+$primary-light: hsl(222,50%,95%);
+
+$secondary: hsl(350,80%,50%);
+
+$red: hsl(10,80%,50%);
+$orange: hsl(50,80%,50%);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@mixin mobile ($size: 640px) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+html {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #333;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: $primary-light;
+  background-attachment: fixed;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.heading {
+  width: 100%;
+  margin-left: 1rem;
+  font-weight: 900;
+  font-size: 1.618rem;
+  text-transform: uppercase;
+  letter-spacing: .1ch;
+  line-height: 1;
+  padding-bottom: .5em;
+  margin-bottom: 1rem;
+  position: relative;
+  
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);
+    bottom: 0;
+  }
+}
+
+.description {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: transparent;
+  cursor: pointer;
+  width: 300px;
+  min-width: calc(33% - 2rem);
+  height: 300px;
+  min-height: 400px;
+  perspective: 1000px;
+  margin: 1rem;
+  position: relative;
+  @include mobile (800px) {
+    width: calc(50% - 2rem);
+  }
+  @include mobile (500px) {
+    width: 100%;
+  }
+}
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+  // overflow: hidden;
+}
+
+.front {
+  background-size: cover;
+  // background-blend-mode: overlay;
+  padding: 2rem;
+  font-size: 1.618rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);
+    opacity: .25;
+    z-index: -1;
+  }
+  .card:hover & {
+    transform: rotateY(180deg);
+  }
+  .card:nth-child(even):hover & {
+    transform: rotateY(-180deg);
+  }
+}
+
+.back {
+  background: #fff;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+  
+  .button {
+    background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);
+    
+    &:before {
+      box-shadow: 0 0 10px 10px rgba($primary, 0.25);
+    background-color: rgba($primary, 0.25);
+    }
+  }
+  
+  .card:hover & {
+    transform: rotateY(0deg);
+  }
+  
+  .card:nth-child(even) & {
+    transform: rotateY(180deg);
+    
+    .button {
+    background: linear-gradient(135deg, adjust-hue($secondary, -20deg), $secondary);
+    
+    &:before {
+      box-shadow: 0 0 10px 10px rgba($secondary, 0.25);
+    background-color: rgba($secondary, 0.25);
+    }
+  }
+  }
+  
+  .card:nth-child(even):hover & {
+    transform: rotateY(0deg);
+  }
+}
+
+.button {
+  $height: 40px;
+  transform: translateZ($height);
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-weight: bold;
+  color: #fff;
+  padding: .5em 1em;
+  border-radius: 100px;
+  font: inherit;
+  border: none;
+  position: relative;
+    transform-style: preserve-3d;
+  transition: 300ms ease;
+  
+  &:before {
+  transition: 300ms ease;
+    position: absolute;
+    display: block;
+    content: '';
+    transform: translateZ(-$height);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    border-radius: 100px;
+    left: 10px;
+    top: 16px;
+  }
+  
+  &:hover {
+    transform: translateZ($height + 15px);
+    
+    &:before {
+      transform: translateZ(-($height + 15px));
+    }
+  }
+  
+  &:active {
+    transform: translateZ($height/2);
+    
+    &:before {
+      transform: translateZ(-($height/2));
+        top: 12px;
+    }
+  }
+}
+
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+    # Container for flip cards
+    st.markdown("<div class='flip-card-container'>", unsafe_allow_html=True)
+
+    # Number of flip cards
+    num_cards=1
+
+    # Generate flip cards with text
+    for i in range(num_cards):
+        st.markdown(
+            f"""
+
+<div class="content">
+  <h1 class="heading"> We provide the necessary services to you </h1>
+  <p class="description"></p><a class="card" href="#!">
+    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <p>Hardware Design and Development</p>
+    </div>
+    <div class="back">
+      <div>
+        <p>Industry-leading hardware design.</p>
+        <p>Conceptualization to production, crafting top-tier solutions for data capture and processing.</p>
+      </div>
+    </div></a><a class="card" href="#!">
+    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <p>Software Product Development</p>
+    </div>
+    <div class="back">
+      <div>
+        <p>Skilled software team</p>
+        <p>Robust solutions, intricate algorithms, intuitive interfaces, leveraging tech for streamlined operations.</p>
+        <button class="button">Click Here</button>
+      </div>
+    </div></a><a class="card" href="#!">
+    <div class="front" style="background-image: url(https://plus.unsplash.com/premium_photo-1683120968693-9af51578770e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNsb3VkJTIwc2VydmljZXN8ZW58MHx8MHx8fDA%3D)">
+      <p>Cloud Services</p>
+    </div>
+    <div class="back">
+      <div>
+        <p>Tailored cloud services</p>
+        <p>Secure storage, real-time analytics, customized dashboards, empowering businesses with actionable insights.</p>
+        <button class="button">Click Here</button>
+      </div>
+    </div></a><a class="card" href="#!">
+    <div class="front" style="background-image: url(https://plus.unsplash.com/premium_photo-1683134313585-8ebbdd15e8ad?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <p>Customized Dashboards</p>
+    </div>
+    <div class="back">
+      <div>
+        <p>Transforming data to intelligent</p>
+        <p>dashboards, advanced visualization, user-centric design for confident, data-driven decisions</p>
+        <button class="button">Click Here</button>
+      </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # Close container for flip cards
+    st.markdown("</div>", unsafe_allow_html=True)
+
+
